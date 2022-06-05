@@ -77,20 +77,22 @@ var f1Dictionary = {
   "F1 Dry Tyres": [
     {
       name: "Red Tyre",
-      description: "Soft - Slick tread - Least durable - Most grip.",
+      description:
+        "These are the very softest tyres in the redeveloped range, designed for the slowest circuits with low wear and degradation where maximum mechanical grip is required from the rubber. These are normally seen at street circuits, most typically in Monaco, and also on circuits where the asphalt is exceptionally smooth.",
       imgURL:
         "https://d3nv2arudvw7ln.cloudfront.net/images/global/86/79/red-parentesi-4505517435254.png"
     },
     {
       name: "Yellow Tyre",
       description:
-        "Medium - Slick tread - Less durable than white - Lesser grip than red.",
+        "Medium - Slick tread - Less durable than white - Lesser grip than red. The middle compound, with an excellent balance between performance and versatility, is well-suited to a wide range of circumstances.",
       imgURL:
         "https://d3nv2arudvw7ln.cloudfront.net/images/global/435/683/yellow-parentesi-4505517436006.png"
     },
     {
       name: "White Tyre",
-      description: "Hard - Slick tread - Most durable - Least grip.",
+      description:
+        "This is the hardest tyre in the range, which will be nominated for the circuits that take the most energy out of the tyres. These could typically include places like Silverstone or Suzuka. It’s designed to provide maximum resistance to heat and extreme forces, being capable of running very long stints with minimal drop-off in terms of performance.",
       imgURL:
         "https://d3nv2arudvw7ln.cloudfront.net/images/global/1006/199/white-parentesi-4505517435090.png"
     }

@@ -40,7 +40,6 @@ body {
 /*Navigation - Categories*/
 
 .categories-nav {
-  margin-top: ;
   text-align: center;
   background-color: var(--primary);
   padding: 10px 0;
@@ -69,7 +68,7 @@ body {
 
 .content {
   display: block;
-  height: 1750px;
+  height: 1950px;
   width: 700px;
   margin: auto;
   padding-bottom: 10px;
@@ -89,7 +88,7 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   margin: 0;
-  height: 100px;
+  height: 120px;
 }
 
 .content-inner-div {

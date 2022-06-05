@@ -68,9 +68,8 @@ body {
 /*Content - Display*/
 
 .content {
-  background-color: var(--tertiary);
-  color: var(--secondary);
   display: block;
+  height: 1750px;
   width: 700px;
   margin: auto;
   padding-bottom: 10px;
@@ -93,8 +92,10 @@ body {
   height: 100px;
 }
 
-.content-innerdiv:nth-of-type(even) {
-  background-color: #000000;
+.content-inner-div {
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  padding-bottom: 10px;
 }
 
 .content-inner-inner-div {
@@ -105,7 +106,6 @@ body {
 
 footer {
   display: flex;
-  margin-top: 10px;
   background-color: var(--primary);
   margin-bottom: 0;
 }

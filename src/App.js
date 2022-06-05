@@ -157,7 +157,6 @@ export default function App() {
               <img src={category.imgURL} alt="img" />
               <p>{category.description}</p>
             </div>
-            <hr />
           </div>
         ))}
       </div>
@@ -167,19 +166,24 @@ export default function App() {
           <ul>
             Sources:
             <li>
-              <a href="https://f1.fandom.com/wiki/Flag_system">
+              <a href="https://f1.fandom.com/wiki/Flag_system" target="_blank">
                 F1 Fandom Wiki
               </a>
             </li>
             <li>
-              <a href="https://www.pirelli.com/tyres/en-ww/motorsport/f1/tyres">
+              <a
+                href="https://www.pirelli.com/tyres/en-ww/motorsport/f1/tyres"
+                target="_blank"
+              >
                 Pirelli
               </a>
             </li>
             <br />
             Theme:
             <li>
-              <a href="https://www.formula1.com/">Formula1</a>
+              <a href="https://www.formula1.com/" target="_blank">
+                Formula1
+              </a>
             </li>
           </ul>
         </div>

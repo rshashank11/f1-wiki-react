@@ -1,8 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap");
+
 .App {
-  font-family: sans-serif;
+  font-family: "Titillium Web", sans-serif;
   color: white;
 }
 
+:root {
+  --primary: #e10600;
+  --secondary: #000000;
+  --tertiary: #f3f3f3;
+}
+
 body {
-  background-color: black;
+  background-color: var(--secondary);
+  margin: 0;
+}
+/*Header - Logo and Name*/
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary);
+}
+
+.header h1 {
+  padding-left: 1rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+.header a {
+  color: var(--tertiary);
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: var(--secondary);
+}
+
+/*Navigation - Categories*/
+
+.categories-nav {
+  margin-top: ;
+  text-align: center;
+  background-color: var(--primary);
+  padding: 10px 0;
+}
+
+.categories-ul {
+  display: inline;
+  text-align: center;
+}
+
+.categories-li {
+  padding-left: 0;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+  display: inline;
+  text-align: center;
+}
+
+.categories-li:hover {
+  text-decoration: underline;
+  color: var(--secondary);
+}
+
+/*Content - Display*/
+
+.content {
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  display: block;
+  width: 700px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.content h3 {
+  padding-left: 10px;
+}
+
+.content img {
+  padding-left: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+.content p {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+  height: 100px;
+}
+
+.content-innerdiv:nth-of-type(even) {
+  background-color: #000000;
+}
+
+.content-inner-inner-div {
+  display: flex;
+}
+
+/*Footer - Sources and Theme*/
+
+footer {
+  display: flex;
+  margin-top: 10px;
+  background-color: var(--primary);
+  margin-bottom: 0;
+}
+
+footer ul {
+  padding-inline-start: 0px;
+  margin: 0;
+  list-style: none;
+}
+
+footer li {
+  display: inline;
+  padding-left: 10px;
+}
+
+footer a {
+  color: var(--tertiary);
+}
+
+footer a:hover {
+  color: var(--secondary);
+}
+
+.link-source {
+  margin: auto;
+  text-align: center;
+}
+
+.link-social {
+  margin: auto;
+  text-align: center;
 }

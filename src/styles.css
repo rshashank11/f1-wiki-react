@@ -17,9 +17,15 @@ body {
 }
 /*Header - Logo and Name*/
 .header {
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: var(--primary);
+}
+
+.header-inner {
   display: flex;
   justify-content: center;
-  background-color: var(--primary);
 }
 
 .header h1 {
@@ -66,10 +72,13 @@ body {
 
 /*Content - Display*/
 
+.content-container {
+  width: 100%;
+}
 .content {
   display: block;
-  height: 1950px;
-  width: 700px;
+  min-height: 1950px;
+  max-width: 700px;
   margin: auto;
   padding-bottom: 10px;
 }
@@ -80,15 +89,15 @@ body {
 
 .content img {
   padding-left: 10px;
-  height: 100px;
-  width: 100px;
+  max-height: 100px;
+  max-width: 100px;
 }
 
 .content p {
   padding-left: 10px;
   padding-right: 10px;
   margin: 0;
-  height: 120px;
+  min-height: 120px;
 }
 
 .content-inner-div {
@@ -104,9 +113,16 @@ body {
 /*Footer - Sources and Theme*/
 
 footer {
-  display: flex;
+  width: 100%;
+  display: block;
   background-color: var(--primary);
   margin-bottom: 0;
+}
+
+.footer-inner {
+  display: flex;
+  margin: auto;
+  text-align: center;
 }
 
 footer ul {

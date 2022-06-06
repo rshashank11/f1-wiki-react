@@ -127,16 +127,18 @@ export default function App() {
   return (
     <div className="App">
       <div className="header">
-        <img src="f1-logo-white.svg" alt="logo" />
-        <h1>
-          <a
-            href="https://f1.fandom.com/wiki/Formula_1_Wiki"
-            target="_blank"
-            rel="noopener"
-          >
-            Wiki
-          </a>
-        </h1>
+        <div className="header-inner">
+          <img src="f1-logo-white.svg" alt="logo" />
+          <h1>
+            <a
+              href="https://f1.fandom.com/wiki/Formula_1_Wiki"
+              target="_blank"
+              rel="noopener"
+            >
+              Wiki
+            </a>
+          </h1>
+        </div>
       </div>
       <nav className="categories-nav">
         {f1Categories.map((category) => (
@@ -151,76 +153,83 @@ export default function App() {
         ))}
       </nav>
 
-      <div className="content">
-        {f1Dictionary[category].map((category) => (
-          <div className="content-inner-div">
-            <h3>{category.name}</h3>
-            <div className="content-inner-inner-div">
-              <img src={category.imgURL} alt="img" />
-              <p>{category.description}</p>
+      <div className="content-container">
+        <div className="content">
+          {f1Dictionary[category].map((category) => (
+            <div className="content-inner-div">
+              <h3>{category.name}</h3>
+              <div className="content-inner-inner-div">
+                <img src={category.imgURL} alt="img" />
+                <p>{category.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <footer>
-        <div className="link-source">
-          <b>Made using React</b>
-          <ul>
-            Sources:
-            <li>
-              <a href="https://f1.fandom.com/wiki/Flag_system" target="_blank">
-                F1 Fandom Wiki
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.pirelli.com/tyres/en-ww/motorsport/f1/tyres"
-                target="_blank"
-              >
-                Pirelli
-              </a>
-            </li>
-            <br />
-            Theme:
-            <li>
-              <a href="https://www.formula1.com/" target="_blank">
-                Formula1
-              </a>
-            </li>
-          </ul>
-        </div>
-        <hr />
-        <div className="link-social">
-          <b>SOCIALS</b>
-          <ul>
-            <li>
-              <a
-                href="https://github.com/rshashank11"
-                target="_blank"
-                rel="noopener"
-              >
-                Github
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/shashank-r-7736a21b3"
-                target="_blank"
-                rel="noopener"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/rshank1111"
-                target="_blank"
-                rel="noopener"
-              >
-                Twitter
-              </a>
-            </li>
-          </ul>
+        <div className="footer-inner">
+          <div className="link-source">
+            <b>Made using React</b>
+            <ul>
+              Sources:
+              <li>
+                <a
+                  href="https://f1.fandom.com/wiki/Flag_system"
+                  target="_blank"
+                >
+                  F1 Fandom Wiki
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.pirelli.com/tyres/en-ww/motorsport/f1/tyres"
+                  target="_blank"
+                >
+                  Pirelli
+                </a>
+              </li>
+              <br />
+              Theme:
+              <li>
+                <a href="https://www.formula1.com/" target="_blank">
+                  Formula1
+                </a>
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div className="link-social">
+            <b>SOCIALS</b>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/rshashank11"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Github
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/shashank-r-7736a21b3"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/rshank1111"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Twitter
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </footer>
     </div>

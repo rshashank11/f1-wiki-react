@@ -1,7 +1,7 @@
 {
-  "name": "f1-wiki",
+  "name": "f1-wiki-final-react-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Made a f1 wiki page using react :)",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
